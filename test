@@ -1,0 +1,10 @@
+import random
+
+def GenCardPiles():
+    Cards = [i for i in range(1,53)]
+    random.shuffle(Cards)
+    #turn the below into a list of lists
+    n_Piles = len(Cards)/3
+    piles = [Cards[3*i : 3*(i+1)] for i in range(n_Piles)]
+    return piles
+    
