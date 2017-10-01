@@ -12,3 +12,10 @@ def avail_to_play(card_piles):
     init_Avail = []
     if not card_piles:
         return init_Avail
+    else:
+        for i in range(len(card_piles)):
+            if not card_piles[i]:
+                pass
+            else:   
+                init_Avail.append(card_piles[i][0])
+        return init_Avail
