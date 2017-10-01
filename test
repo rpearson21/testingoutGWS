@@ -8,3 +8,7 @@ def GenCardPiles():
     piles = [Cards[3*i : 3*(i+1)] for i in range(n_Piles)]
     return piles
     
+def avail_to_play(card_piles):
+    init_Avail = []
+    if not card_piles:
+        return init_Avail
